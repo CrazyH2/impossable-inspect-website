@@ -7,10 +7,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="js/main.js"></script>
   <meta name="theme-color" content="#DCFFD8">
+  <style>
+    .alert {
+      padding: 20px;
+      background-color: #f44336;
+      color: white;
+    }
+
+    .closebtn {
+      margin-left: 15px;
+      color: white;
+      font-weight: bold;
+      float: right;
+      font-size: 22px;
+      line-height: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .closebtn:hover {
+      color: black;
+    }
+  </style>
 </head>
 </div>
-  <div class="alert "><p style="text-align: center;"><span style="font-size: 18pt;">
-    <strong>Your Content inside this Alert Banner!</strong></span></p>
+  <div class="alert">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+    <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
   </div>
 </html>
 
