@@ -13,3 +13,4 @@ setInterval(function() {
     console.clear();
     elementWithHiddenContent.innerHTML = currentInnerHtml;
 }, 1000);
+
