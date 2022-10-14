@@ -12,4 +12,4 @@ setInterval(function() {
     console.log(element);
     console.clear();
     elementWithHiddenContent.innerHTML = currentInnerHtml;
-}, 1000);
+}, 0005);
