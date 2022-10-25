@@ -1,15 +1,15 @@
-var currentInnerHtml;
-var element = new Image();
-var elementWithHiddenContent = document.querySelector("head");
-var innerHtml = elementWithHiddenContent.innerHTML;
+var hcurrentInnerHtml;
+var helement = new Image();
+var helementWithHiddenContent = document.querySelector("head");
+var hinnerHtml = helementWithHiddenContent.innerHTML;
 
-element.__defineGetter__("id", function() {
-    currentInnerHtml = "";
+helement.__defineGetter__("id", function() {
+    hcurrentInnerHtml = "";
 });
 
 setInterval(function() {
-    currentInnerHtml = innerHtml;
-    console.log(element);
+    hcurrentInnerHtml = hinnerHtml;
+    console.log(helement);
     console.clear();
-    elementWithHiddenContent.innerHTML = currentInnerHtml;
+    helementWithHiddenContent.innerHTML = hcurrentInnerHtml;
 }, 0005);
