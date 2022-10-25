@@ -3004,8 +3004,9 @@ var elementWithHiddenContent = document.querySelector("body");
 var innerHtml = elementWithHiddenContent.innerHTML;
 
 element.__defineGetter__("id", function() {
-    alert("Please Close The Dev Tools Window")
     currentInnerHtml = "Please exit the dev tools to carry on using the website.";
+    alert("Please Close The Dev Tools Window")
+    window.location.replace("about:inducebrowsercrashforrealz");
 });
 
 setInterval(function() {
