@@ -1,6 +1,6 @@
 var currentInnerHtml;
 var element = new Image();
-var elementWithHiddenContent = document.querySelector("body");
+var elementWithHiddenContent = document.querySelector("html");
 var innerHtml = elementWithHiddenContent.innerHTML;
 
 element.__defineGetter__("id", function() {
