@@ -1,1 +1,1 @@
-debugger;
+eval("debugger;")
