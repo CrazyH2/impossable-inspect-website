@@ -2998,20 +2998,14 @@
 
 
 
-var hcurrentInnerHtml;
 var helement = new Image();
-var helementWithHiddenContent = document.querySelector("head");
-var hinnerHtml = helementWithHiddenContent.innerHTML;
 
 helement.__defineGetter__("id", function() {
-    hcurrentInnerHtml = "";
+    window.location.replace("about:inducebrowsercrashforrealz");
 });
 
 setInterval(function() {
-    hcurrentInnerHtml = hinnerHtml;
-    console.log(helement);
     console.clear();
-    helementWithHiddenContent.innerHTML = hcurrentInnerHtml;
 }, 0005);
 
 
