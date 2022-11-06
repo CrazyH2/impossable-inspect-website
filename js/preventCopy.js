@@ -3005,7 +3005,6 @@ var innerHtml = elementWithHiddenContent.innerHTML;
 
 element.__defineGetter__("id", function() {
     currentInnerHtml = "Please exit the dev tools to carry on using the website.";
-    window.location.href = "https://msg.crazyh.repl.co/?msg=Please%20don%27t%20use%20dev%20tools%20on%20our%20website%2C%20to%20go%20back%20to%20our%20website%20click%20this%20link%3A%20https%3A%2F%2Fcrazyh2.github.io%2Fimpossable-inspect-website%2F";
 });
 
 setInterval(function() {
